@@ -1,0 +1,87 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Шапка сайта */
+.site-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    margin: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 100px;
+}
+/* Подвал сайта */
+.site-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    height: 100px;
+    margin: 10px 0;
+}
+
+.footer-info {
+    font-size: 14px;
+}
+main {
+    padding: 20px;
+    margin-left: 300px;
+}
+
+section {
+    margin-bottom: 20px;
+
+}
+section h2{
+    margin-right: 300px;
+    text-align: center;
+}
+section img {
+    width: 150px;
+    height: 300px;
+    height: auto;
+
+}

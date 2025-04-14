@@ -1,0 +1,209 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Шапка сайта */
+.site-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    margin: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 100px;
+}
+/* Подвал сайта */
+.site-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    height: 100px;
+    margin: 10px 0;
+}
+
+.footer-info {
+    font-size: 14px;
+}
+
+
+
+/* Контейнер */
+.content {
+    margin: 0 auto;
+    padding: 20px;
+    background: white;
+}
+
+/* Заголовок страницы */
+h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #222;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Блоки заголовков разделов */
+h3 {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    height: 50px;
+    padding: 50px;
+    text-align: center;
+    background: #dce4eb;
+    margin-top: 40px;
+}
+
+/* Сетка изображений */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Карточки с изображениями */
+.card {
+    background: white;
+    text-align: center;
+}
+
+.card img {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.card p {
+    color: #444;
+    padding: 10px 0;
+}
+
+/* Исторические карты */
+.map-section {
+    background: #eef2f6;
+    padding: 20px;
+    text-align: center;
+}
+
+.map-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 15px;
+}
+
+/* Карточки карт */
+.map-card {
+    width: 60%;
+}
+
+.map-card img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+/* Блок информации */
+.info-block {
+    background: #c8e6c9;
+    padding: 10px;
+    margin: 20px 0;
+    color: black;
+    text-align: center;
+}
+
+/* Карточки знаменитостей */
+.people-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.people-card {
+    text-align: center;
+}
+
+.people-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.people-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+    .grid, .map-grid, .people-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card, .map-card, .people-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .card, .map-card, .people-card {
+        width: 100%;
+    }
+}
+.info{
+    background: #90EE90;
+    width: 100%;
+    color: black;
+    font-size: 26px;
+}

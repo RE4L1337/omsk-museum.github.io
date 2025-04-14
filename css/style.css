@@ -1,0 +1,202 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Шапка сайта */
+.site-header {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 40px;
+    margin: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 100px;
+}
+/* Слайдер */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Слайдер на весь экран */
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%; /* 100% * количество слайдов */
+    height: 100%;
+}
+
+.slide {
+    min-width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Растягиваем, но сохраняем пропорции */
+}
+
+.caption {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px 25px;
+    border-radius: 5px;
+}
+
+.caption h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.caption p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Кнопки переключения */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: white;
+}
+
+.prev {
+    left: 20px;
+}
+
+.next {
+    right: 20px;
+}
+/* Блок "Музеи города Омска" */
+.museum-section{
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+}
+.museum-h2 {
+    background-color: #E5F0FF; /* Голубой фон */
+    color: black;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* Заголовок */
+.museum-section h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Галерея музеев */
+.museum-gallery {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Карточка музея */
+.museum {
+    padding: 10px;
+    text-align: center;
+}
+
+/* Изображения музеев */
+.museum img {
+    width: 550px;
+    height: 300px;
+}
+
+/* Подпись под изображением */
+.museum p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .museum-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .museum {
+        width: 90%;
+    }
+}
+/* Подвал сайта */
+.site-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    height: 100px;
+    margin: 10px 0;
+}
+
+.footer-info {
+    font-size: 14px;
+}
